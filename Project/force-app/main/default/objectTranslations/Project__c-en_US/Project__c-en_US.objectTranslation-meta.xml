@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Project</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Projects</value>
+    </caseValues>
+    <layouts>
+        <layout>Client Project</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Internal Project</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Client Project --></label>
+        <name>Client_Project</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Internal Project --></label>
+        <name>Internal_Project</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Client project must be linked with client account type --></errorMessage>
+        <name>Client_Project_Account_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Internal project must be linked with Account of type Internal Department --></errorMessage>
+        <name>Internal_Project_Account_Rule</name>
+    </validationRules>
+</CustomObjectTranslation>

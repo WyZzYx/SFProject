@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Project_Account_Type</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    RecordType.DeveloperName = &quot;Client_Project&quot;, 
+    ISBLANK(Client__c), 
+    NOT(ISPICKVAL(Client__r.Type, &quot;Client&quot;))
+)</errorConditionFormula>
+    <errorMessage>Client project must be linked with client account type</errorMessage>
+</ValidationRule>
